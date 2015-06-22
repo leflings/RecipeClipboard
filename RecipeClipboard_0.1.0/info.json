@@ -4,6 +4,6 @@
   "title": "Recipe Clipboard",
   "author": "leflings",
   "homepage": "",
-  "dependencies": ["base"],
+  "dependencies": ["base >= 0.11.0"],
   "description": "Enables copy/pasting of items from recipes, to requester chest"
 }

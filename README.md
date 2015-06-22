@@ -4,7 +4,11 @@ This is a mod for the brilliant game of Factorio.
 
 **Disclaimer: This is my first, and very quick'n'dirty, attempt at a factorio
 mod. This might be a horrible hack, done completely against the idiomatic ways,
-but hey it works, so here I'm sharing it.**
+but hey it works, so here I'm sharing it.
+
+The mod has been tested with base 0.11.22 and newest (as per 22/6-15) Bobs mods.
+This should work with any base 0.11+, and should be able to handle many other
+mods. This has not been tested**
 
 ## Backstory
 After playing quite a bit of Factorio with Bob's collection of mods, I grew very
