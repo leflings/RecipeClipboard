@@ -1,0 +1,9 @@
+{
+  "name": "RecipeClipboard",
+  "version": "0.1.0",
+  "title": "Recipe Clipboard",
+  "author": "leflings",
+  "homepage": "",
+  "dependencies": ["base"],
+  "description": "Enables copy/pasting of items from recipes, to requester chest"
+}
