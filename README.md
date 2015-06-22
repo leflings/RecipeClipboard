@@ -26,6 +26,13 @@ Recipe Clipboard adds the ability to
 to be reopened for the changes to appear on the screen. Game-wise the settings
 are pasted instantly.**
 
+When copying/pasting the ingredient list, it will request twice (x2) the amount
+listed in the recipe, of each ingredient. This can be configured in the lua
+file.
+
+When pasting to an inserter, it will limit the network capacity to 5 as default.
+This can be changed in the lua file.
+
 When pasting a recipe to a logistic chest, the mod will attempt to merge the
 ingredient list, with any current reques slots set in the chest. The mod doesn't
 do anything about the 10 slot limit though.
