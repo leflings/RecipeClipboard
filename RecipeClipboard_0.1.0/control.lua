@@ -82,23 +82,31 @@
           end
         else
           local s = 0
+		  local newIngredients = {}
+		  
           for _,_ in pairs(ingredients) do s = s + 1 end
+		  for k,v in pairs(ingredients) do
+			newIngredients[k] = {name = v['name'], count = v['count']}
+		  end
+		  dbg('ingredients:')
           listSlots(ingredients)
           for i=1,10 do
             local slot = game.player.opened.getrequestslot(i)
             if slot ~= nil then
               local n = slot['name']
               if ingredients[n] ~= nil then
+				
                 dbg('Updating item count [' .. n .. '] ' .. serpent.block(slot))
-                ingredients[n]['count'] = ingredients[n]['count'] + slot['count']
+				newIngredients[n]['count'] = newIngredients[n]['count'] + slot['count']
               else
-                ingredients[n] = slot
+                newIngredients[n] = slot
               end
             end
           end
-          listSlots(ingredients)
+		  dbg('newIngredients:')
+          listSlots(newIngredients)
           local i = 1
-          for _,e in pairs(ingredients) do
+          for _,e in pairs(newIngredients) do
             game.player.opened.setrequestslot(e,i)
             i = i + 1
             if i > 10 then
